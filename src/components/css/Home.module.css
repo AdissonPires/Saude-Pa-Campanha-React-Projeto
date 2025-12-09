@@ -1,0 +1,101 @@
+/* Container principal da Home */
+.home_container {
+    width: 100%;
+    min-height: 80vh; /* Ocupa quase a tela toda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Degradê suave */
+    padding: 4em 1em;
+    text-align: center;
+}
+
+/* Título Principal */
+.title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #003366; /* Azul Marinho (Sério/Saúde) */
+}
+
+.title span {
+    color: #ba1e26; /* Vermelho (Destaque/Pará) */
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* Subtítulo / Texto de apoio */
+.subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 2em;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Botão de Ação (CTA) */
+.btn {
+    background-color: #ba1e26;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background-color: #003366; /* Vira azul ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de subir um pouquinho */
+}
+
+/* Imagem ilustrativa (Opcional, se você colocar uma img na home) */
+.hero_img {
+    width: 350px;
+    margin-top: 2em;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- Responsividade para Celular --- */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+    .hero_img {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em; /* Diminui de 3em para 2em */
+    }
+    
+    .subtitle {
+        font-size: 1em;
+        padding: 0 10px;
+        width: 100%; /* Garante que não ultrapasse a tela */
+    }
+
+    .home_container {
+        padding: 6em 1em 2em 1em; /* Aumenta o padding do topo porque a Navbar ficou mais alta */
+    }
+    
+    .btn {
+        width: 100%; /* Botão ocupa a largura toda no celular (fica mais fácil de clicar) */
+        display: block;
+    }
+}

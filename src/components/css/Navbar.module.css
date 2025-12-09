@@ -1,0 +1,65 @@
+.navbar {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  min-height: 90px;
+  background-color: #003366; /* Vermelho da bandeira */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo span {
+  color: #f80505; /* Azul escuro */
+  background: rgb(255, 255, 255);
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.list a:hover {
+  color: #FFD700; /* Amarelo ao passar o mouse */
+}
+/* ... mantenha o código anterior (position: fixed, etc) ... */
+
+/* Adicione/Substitua a parte da lista */
+.list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Coloca o Logo em cima e Links embaixo */
+    padding: 1em;
+    gap: 10px;
+  }
+
+  .list {
+    gap: 15px;
+    font-size: 0.9em; /* Diminui um pouco a letra */
+    width: 100%;
+    justify-content: center; /* Centraliza os links */
+    flex-wrap: wrap; /* Se não couber, quebra linha */
+  }
+}

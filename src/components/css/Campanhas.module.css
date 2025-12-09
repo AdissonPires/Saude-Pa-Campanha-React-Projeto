@@ -1,0 +1,66 @@
+/* Container principal da página */
+.container {
+    padding: 2em;
+    min-height: 80vh;
+}
+
+.tituloPrincipal {
+    color: #003366;
+    margin-bottom: 0.5em;
+    border-bottom: 3px solid #ba1e26; /* Detalhe vermelho */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.descricao {
+    color: #555;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
+/* --- SEÇÃO DE LINKS ÚTEIS --- */
+.secaoLinks {
+    margin-top: 3em;
+    background-color: #f0f4f8; /* Fundo cinza azulado suave */
+    padding: 2em;
+    border-radius: 10px;
+    border-left: 5px solid #003366;
+}
+
+.secaoLinks h2 {
+    color: #333;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.gridLinks {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    gap: 15px;
+}
+
+/* O botão do link em si */
+.btnLink {
+    text-decoration: none;
+    background-color: white;
+    color: #003366;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
+    flex: 1 1 200px; /* Flexível: cresce e diminui, min 200px */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btnLink:hover {
+    background-color: #003366;
+    color: white;
+    transform: translateY(-3px); /* Sobe um pouquinho */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

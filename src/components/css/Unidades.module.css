@@ -1,0 +1,33 @@
+.container {
+  padding: 2em;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  /* Cria colunas automáticas. No celular fica 1, no PC divide o espaço */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.container {
+  padding: 2em;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  /* O SEGREDO: */
+  /* Isso diz: "Crie colunas de no mínimo 300px. Se couber mais, coloque do lado. Se não, jogue pra baixo." */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center; /* Centraliza se sobrar espaço */
+}
+
+/* Ajuste fino para celulares muito pequenos */
+@media (max-width: 480px) {
+  .container {
+    padding: 1em; /* Menos margem no celular */
+  }
+}

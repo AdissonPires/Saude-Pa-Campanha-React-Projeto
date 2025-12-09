@@ -1,0 +1,58 @@
+.container {
+  padding: 2em;
+  max-width: 900px; /* Não deixa ficar largo demais */
+  margin: 0 auto; /* Centraliza na tela */
+  min-height: 80vh;
+}
+
+.btnVoltar {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.detalheCard {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.imgGrande {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 30px;
+}
+
+.tag {
+  background: #ba1e26;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.info h1 {
+  margin-top: 10px;
+  color: #003366;
+  font-size: 2.5em;
+}
+
+.endereco, .telefone {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #555;
+}
+
+.descricao {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
